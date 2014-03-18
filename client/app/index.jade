@@ -1,0 +1,165 @@
+doctype html
+//[if IE 9]><html class="lt-ie10" lang="en" > <![endif]
+html(class='no-js', lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(name='robots', content='noindex, nofollow')
+    title James Nix
+    <!-- Favicon -->
+    link(rel='shortcut icon', href='/media/icons/favicon.ico', type='image/x-icon')
+    link(rel='icon', href='/media/icons/favicon.ico', type='image/x-icon')
+    <!-- Font Awesome -->
+    link(href='//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css', rel='stylesheet')
+    <!-- Bootstrap -->
+    link(href='/css/bootstrap.min.css', rel='stylesheet')
+    //link(href='assets/css/bootstrap-responsive.css', rel='stylesheet')
+    <!-- Hoover -->
+    link(href='css/hover-min.css', rel='stylesheet', media='all')
+    <!-- Styles -->
+    link(rel='stylesheet', href='/css/normalize.css')
+    <!-- link(rel='stylesheet', media='screen and (max-width: 480px)', href='/css/app-small.css') -->
+    link(rel='stylesheet', href='/css/app.css')
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- Twitter widget -->
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    script(src='/js/vendor/modernizr.js')
+        
+  body
+    //i#location(class='fa fa-location-arrow fa-1x button', data-toggle='modal', data-target='#locationModal')
+    i#weather(class='fa fa-bolt fa-2x button', data-toggle='modal', data-target='#weatherModal')
+    .modal.fade#weatherModal
+      .modal-dialog
+        .modal-content
+          .modal-header
+            button(type='button', class='close', data-dismiss='modal', aria-hidden='true') &times;
+            h4.modal-title Current weather at this location
+          .modal-body#weatherModalBody
+          .modal-footer
+            //button#weatherBtn(type='button', class='btn btn-default') Get weather by zip
+            button(type='button', class='btn btn-default', data-dismiss='modal') Close
+
+    #container.container-fluid
+      nav#top-nav(class='navbar navbar-default navbar-fixed-top', role='navigation')
+        #top-nav-container.container-fluid
+          ul
+            li
+              a(href='/index.html')
+                i#home(class='fa fa-home fa-2x button hover')
+            li
+              a(href='#')
+                i#about(class='fa fa-info fa-2x button hover')
+            li
+              a(href='/contact.html')
+                i#contact(class='fa fa-envelope-o fa-2x button hover')
+
+      .clear
+      #page.page
+        div#carousel.carousel.slide(data-ride='carousel', data-pause='hover')
+          <!-- Indicators -->
+          ol.carousel-indicators
+            li(data-target='#carousel', data-slide-to='0', class='active')
+            li(data-target='#carousel', data-slide-to='1')
+            li(data-target='#carousel', data-slide-to='2')
+          <!-- Wrapper for slides -->
+          .carousel-inner
+            .item.active
+              a(href='http://memory.jamesnix.net')
+                img(src='/media/Memory-710-444.png', alt='Memory game link')
+                .carousel-caption
+                  h3 Memory
+            .item
+              a(href='http://quiz.jamesnix.net')
+                img(src='/media/quiz-710-444.png', alt='Quiz game link')
+                .carousel-caption
+                  h3 Quiz-O-Matic
+            .item
+              a(href='#')
+                img(src='/media/shell-710-444.png', alt='Shell game link')
+                .carousel-caption
+                  h3 Shell Game
+          <!-- Controls -->
+          a.left.carousel-control(href='#carousel', data-slide='prev')
+            span.fa.fa-arrow-circle-o-left.fa-2x
+          a.right.carousel-control(href='#carousel', data-slide='next')
+            span.fa.fa-arrow-circle-o-right.fa-2x
+
+        h2 So this is it
+
+        p.
+          Drinking vinegar irony typewriter, viral skateboard gentrify retro cardigan banh mi post-ironic
+          tofu Tonx cred Brooklyn. Sustainable put a bird on it readymade, Etsy banjo Tumblr pop-up photo booth
+          hella ethical. Post-ironic scenester iPhone, 3 wolf moon church-key fashion axe shabby chic vegani
+          hoodie four loko Echo Park tattooed Neutra McSweeney's selfies. Deep v PBR mumblecore typewriter
+          flannel. +1 viral four loko hashtag pour-over Tonx, actually tattooed distillery Truffaut Pinterest.
+          Salvia fap leggings kitsch. Pitchfork semiotics 90's, raw denim wolf pickled meggings.
+        p.
+          Pinterest Helvetica Etsy Tonx farm-to-table typewriter. Kale chips readymade keffiyeh Thundercats
+          selvage, wolf bitters authentic fashion axe. Whatever shabby chic mustache, pour-over wolf artisan
+          semiotics. Flexitarian seitan biodiesel bicycle rights cray trust fund. Bitters mumblecore fixie
+          biodiesel umami. Terry Richardson Pitchfork kale chips, deep v gluten-free fashion axe umami Truffaut
+          trust fund ugh try-hard biodiesel vinyl forage freegan. Authentic cliche salvia, banh mi Austin direct
+          trade cornhole tofu normcore Schlitz.
+        p.
+          Shabby chic letterpress scenester cardigan kale chips church-key, biodiesel Austin twee Godard. Squid
+          tattooed four loko skateboard, High Life chia flexitarian VHS quinoa ethical cray bitters before they
+          sold out plaid. Cosby sweater next level bespoke lo-fi bicycle rights, banjo fanny pack seitan. Fixie
+          tousled jean shorts roof party, swag iPhone fashion axe Thundercats distillery freegan before they sold
+          out small batch pug polaroid Austin. Pinterest kale chips typewriter Williamsburg Thundercats, pug you
+          probably haven't heard of them selvage ugh pop-up. Echo Park bespoke tofu, Marfa bitters before they
+          sold out Godard sartorial synth ethnic Wes Anderson Brooklyn Intelligentsia YOLO tousled. Bitters
+          drinking vinegar whatever yr.
+        p.
+          Aesthetic selvage wayfarers mlkshk lo-fi freegan. Occupy wayfarers raw denim lo-fi, master cleanse
+          wolf tote bag quinoa fap banjo cardigan. IPhone meggings tote bag, kogi Pinterest brunch sartorial
+          banjo. Blue Bottle Williamsburg +1 Echo Park. Fixie Blue Bottle DIY 90's Carles mustache. Craft beer
+          iPhone slow-carb, semiotics Schlitz selfies lomo four loko. Stumptown typewriter squid Tonx master
+          cleanse slow-carb, authentic Brooklyn Echo Park pickled wayfarers post-ironic.
+        p.
+          Pinterest Helvetica Etsy Tonx farm-to-table typewriter. Kale chips readymade keffiyeh Thundercats
+          selvage, wolf bitters authentic fashion axe. Whatever shabby chic mustache, pour-over wolf artisan
+          semiotics. Flexitarian seitan biodiesel bicycle rights cray trust fund. Bitters mumblecore fixie
+          biodiesel umami. Terry Richardson Pitchfork kale chips, deep v gluten-free fashion axe umami Truffaut
+          trust fund ugh try-hard biodiesel vinyl forage freegan. Authentic cliche salvia, banh mi Austin direct
+          trade cornhole tofu normcore Schlitz.
+        p.
+          Shabby chic letterpress scenester cardigan kale chips church-key, biodiesel Austin twee Godard. Squid
+          tattooed four loko skateboard, High Life chia flexitarian VHS quinoa ethical cray bitters before they
+          sold out plaid. Cosby sweater next level bespoke lo-fi bicycle rights, banjo fanny pack seitan. Fixie
+          tousled jean shorts roof party, swag iPhone fashion axe Thundercats distillery freegan before they sold
+          out small batch pug polaroid Austin. Pinterest kale chips typewriter Williamsburg Thundercats, pug you
+          probably haven't heard of them selvage ugh pop-up. Echo Park bespoke tofu, Marfa bitters before they
+          sold out Godard sartorial synth ethnic Wes Anderson Brooklyn Intelligentsia YOLO tousled. Bitters
+          drinking vinegar whatever yr.
+
+
+      nav#bottom-nav(class='navbar navbar-default navbar-fixed-bottom', role='navigation')
+        #bottom-nav-container.container-fluid
+          <!-- Bottom nav social links  -->
+          ul
+            li.col-md-3
+              a(href='http://www.linkedin.com/pub/james-nix/5/390/87/')
+                i(class='fa fa-linkedin-square fa-2x button hover')
+            li.col-md-3
+              a(href='https://github.com/jamesnix')
+                i(class='fa fa-github-square fa-2x button hover')
+            li.col-md-3
+              a(href='https://www.facebook.com/jfnix')
+                i(class='fa fa-facebook-square fa-2x button hover')
+            li.col-md-3
+              a(href='https://twitter.com/MistaNix')
+                i(class='fa fa-twitter-square fa-2x button hover')
+
+    <!-- Don't need jquery script if using jquery link below -->
+    script(src='/js/vendor/jquery.js')
+    script(src='/js/vendor/bootstrap.min.js')
+    script(src='/js/vendor/lodash.js')
+    <!-- script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js') -->
+    <!-- script(src='//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js') -->
+    script(src='/js/vendor/moment.js')
+    script(src='/js/source/main.js')

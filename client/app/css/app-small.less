@@ -1,0 +1,240 @@
+@bg-color: rgba(105, 105, 105, 1);
+@import url(http://fonts.googleapis.com/css?family=Esteban|Lusitana:700,400);
+
+/*@media (min-width: 770px) {
+  #container, #bottom-nav li {
+    display: inline;
+  }
+  #container-mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 770px) {
+  #email-form {
+    display: none;
+  }
+
+  #top-nav-mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  #carousel, #email-form, #top-nav, #bottom-nav {
+    display: none;
+  }
+  #top-nav-mobile, #bottom-nav-mobile {
+    display: inline;
+  }
+  #container, #top-nav li, #bottom-nav li {
+    display: none;
+  }
+  #container-mobile, #top-nav-mobile li, #bottom-nav-mobile li {
+    display: inline;
+  }
+}*/
+
+body {
+  width: 100%;
+  height: 100%;
+  background: -moz-linear-gradient(bottom, #6c7bec, #1f0000);
+  background: -ms-linear-gradient(bottom, #6c7bec, #1f0000);
+  background: -o-linear-gradient(bottom, #6c7bec, #1f0000);
+  background: -webkit-linear-gradient(bottom, #6c7bec, #1f0000);
+  background: -linear-gradient(bottom, #6c7bec, #1f0000);
+  padding-top: 3.5em;
+  padding-bottom: 5em;
+}
+
+body.email {
+  height: 63.9285714em;
+}
+
+/*#container {
+  width: 70%;
+  height: 100%;
+  margin: 0 auto;
+}*/
+
+#container-mobile {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+/*#top-nav-container, #bottom-nav-container {
+  position: absolute;
+  width: 70%;
+  margin: 0 15%;
+}*/
+
+/*#top-nav {
+  position: fixed;
+  width: 70%;
+  margin: 0 auto;
+  background-color: @bg-color;
+  border: solid .1em silver;
+  border-bottom-right-radius: 3em;
+  border-bottom-left-radius: 3em;
+}*/
+
+#top-nav-mobile {
+  position: fixed;
+  width: 100%;
+  margin: 0 auto;
+  background-color: @bg-color;
+  border: solid .1em silver;
+  border-bottom-right-radius: 3em;
+  border-bottom-left-radius: 3em;
+}
+
+/*#top-nav li {
+  background-color: transparent;
+  width: 10%;
+  margin: 0;
+  float: left;
+}*/
+
+#top-nav-mobile li {
+  background-color: transparent;
+  width: 33%;
+  margin: 0;
+  float: left;
+}
+
+/*#bottom-nav {
+  position: fixed;
+  width: 70%;
+  margin: 0 auto;
+  background-color: @bg-color;
+  border: solid .1em silver;
+  border-top-right-radius: 3em;
+  border-top-left-radius: 3em;
+}*/
+
+#bottom-nav-mobile {
+  position: fixed;
+  width: 100%;
+  margin: 0 auto;
+  background-color: @bg-color;
+  border: solid .1em silver;
+  border-top-right-radius: 3em;
+  border-top-left-radius: 3em;
+}
+
+/*#bottom-nav li {
+  background-color: transparent;
+  width: 10%;
+  margin: 0;
+  float: right;
+}*/
+
+#bottom-nav-mobile li {
+  background-color: transparent;
+  width: 33%;
+  margin: 0;
+  float: right;
+}
+
+nav a {
+  color: silver;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: white;
+}
+
+nav li {
+  display: inline-block;
+  list-style-type: none;
+  background-color: white;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  margin: 1.25em 0 0 0;
+  padding: .625em;
+}
+
+.clear {
+  clear: both;
+  height: 10%;
+}
+
+#email-form {
+  background-image: url('/media/brushedMetalTexture.png');
+  border: .14285714em solid silver;
+  border-radius: .35714286em;
+  background-size: cover;
+  padding: .71428571em .71428571em;
+  width: 35.7142857em;
+  height: 30em;
+  margin: 0 auto;
+}
+
+.email-clear {
+  clear: both;
+}
+
+textarea.form-control {
+  height: 13em;
+}
+
+h2.email {
+  margin: .71428571em;
+  color: white;
+}
+
+a > span {
+  padding: 200% 0;
+  color: black;
+}
+
+#page {
+  color: white;
+  padding: 1em;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  h2 {
+  font-family: 'Lusitana', serif;
+  font-size: 4em;
+  }
+  p {
+  font-family: 'Esteban', serif;
+  font-size: 1.42857143em;
+  }
+}
+
+.carousel-caption {
+  > h3 {
+  color: black;
+  margin-bottom: -20px;
+  }
+  > p {
+  color: black;
+  }
+}
+
+ol.carousel-indicators {
+  margin-bottom: -15px;
+}
+
+.carousel-indicators {
+  .active {
+  bottom: 0px;
+  background-color: black;
+  }
+  li {
+  border-color: black;
+  bottom: 0px;
+  }
+}
+
+#carousel {
+  width: 50%;
+  height: 26.666667%;
+  margin: 4em 1em 2em 2em;
+  float: right;
+}
