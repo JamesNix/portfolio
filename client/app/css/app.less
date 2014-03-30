@@ -100,8 +100,8 @@ a > span {
   color: white;
   padding: 1em;
   width: 100%;
-  height: 39em;
-  overflow: auto;
+  //height: 39em;
+  //overflow: auto;
   #hed {
   font-family: 'Lusitana', serif;
   font-size: 4em;
@@ -132,7 +132,7 @@ hr {
 .carousel-caption {
   > h3 {
   color: @nav-color;
-  margin-bottom: -20px;
+  bottom: 35px;
   }
   > p {
   color: @nav-color;
@@ -140,12 +140,12 @@ hr {
 }
 
 ol.carousel-indicators {
-  margin-bottom: -132px;
+  margin-bottom: 0;
 }
 
 .carousel-indicators {
   .active {
-  bottom: 0;
+  bottom: 1.5em;
   background-color: @nav-color;
   }
   li {
@@ -160,7 +160,11 @@ ol.carousel-indicators {
 
 #carousel {
   width: 50%;
-  height: 26.666667%;
-  margin: 4em 1em 9em 2em;
+  margin: 2em 1em 1.5em 1.5em;
   float: right;
+}
+
+.carousel-inner {
+  width: 100%;
+  height: 100%;
 }
