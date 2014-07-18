@@ -13,7 +13,7 @@ html(class='no-js', lang='en')
     link(href='//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css', rel='stylesheet')
     <!-- Bootstrap -->
     link(href='/css/bootstrap.min.css', rel='stylesheet')
-    link(href='assets/css/bootstrap-responsive.css', rel='stylesheet')
+    link(href='/css/bootstrap-responsive.css', rel='stylesheet')
     <!-- Styles -->
     link(rel='stylesheet', href='/css/normalize.css')
     <!-- link(rel='stylesheet', media='screen and (max-width: 480px)', href='/css/app-small.css') -->
@@ -24,13 +24,6 @@ html(class='no-js', lang='en')
     #container.container-fluid
       nav#top-nav(class='navbar navbar-default navbar-fixed-top', role='navigation')
         #top-nav-container.container-fluid
-          ul
-            li
-              a(href='/index.html')
-                i#home(class='fa fa-home fa-2x button')
-            li
-              a(href='/info.html')
-                i#about(class='fa fa-info fa-2x button')
           #name James Nix
 
       .clear
@@ -42,9 +35,14 @@ html(class='no-js', lang='en')
             li(data-target='#carousel', data-slide-to='1')
             li(data-target='#carousel', data-slide-to='2')
             li(data-target='#carousel', data-slide-to='3')
+            li(data-target='#carousel', data-slide-to='4')
           <!-- Wrapper for slides -->
           .carousel-inner
             .item.active
+              a(href='http://what-i-got.herokuapp.com')
+                img(src='/media/wig-710-439.png', alt='What I Got app photo')
+                .carousel-caption
+            .item
               a(href='http://chat.jamesnix.net')
                 img(src='/media/fireside-710-444.png', alt='Fireside chat link')
                 .carousel-caption
@@ -75,12 +73,11 @@ html(class='no-js', lang='en')
         hr#rule
 
         p.
-          Less than three months ago, as of this writing, I knew only enough HTML and CSS
-          to break a website. I've come a long way since. Now I can break multiple sites
-          at once.
+          About six months ago, as of this writing, I knew only enough HTML and CSS
+          to break a website. I've come a long way since.
 
         p.
-          Not quite a year out from being laid off from a job in the thriving world of
+          A year out from being laid off from a job in the thriving world of
           print journalism, I've taken a detour back to another interest of mine—technology.
           I've set out on a mission to learn to code, to create clean, logical websites and apps,
           and to learn the correct way to accomplish these tasks. Halfway through the Nashville Software
@@ -90,34 +87,42 @@ html(class='no-js', lang='en')
         p.
           Here are many of the concepts, applications and frameworks that I've been exposed
           to so far in two and a half months:
-
+        hr
         .row#list
           .col-md-4
             ul.list
               li HTML
               li CSS
               li JavaScript
+              li Ruby on Rails
+              li SQL databases
               li AJAX
               li jQuery
-              li Underscore
+              li Foundation
+              li Bootstrap
 
           .col-md-4
             ul.list
+              li Underscore
               li Lo-Dash
-              li LESS
-              li JADE
-              li Foundation
-              li Bootstrap
-              li Vim
+              li Less
+              li Jade
+              li Haml
+              li Sass
+              li AWS
+              li Vim/Atom/Sublime
+              li Test Driven Development
 
           .col-md-4
             ul.list
               li Command line usage
-              li Sublime Text
-              li Atom
+              li Capybara
+              li Heroku
               li Git and GitHub
               li TDD testing
               li Pair programming
+              li Object Oriented Programming
+        hr
 
         p.
           Some of these I know pretty well, of others I have just a passing knowledge. Sometimes
@@ -130,13 +135,17 @@ html(class='no-js', lang='en')
           jQuery to dynamically manipulate DOM elements. Quiz-O-Matic adds data sets to the equation.
           And Fireside Chat is my capstone project for the client-side portion of the NSS bootcamp.
           It utilizes an API call to read and write data to a Firebase database using only client-side Javascript.
-          Yeah, they're still rough in places, and if you try hard enough you might break them.
-          But what they represent is my ability to learn these concepts and turn
-          that into practice. I look to update this site as I learn and accomplish more.
+
+        p.  
+          What I Got is a home media management app meant to catalog books, movies and albums as well
+          as home electronics for insurance purposes. It represents both my capstone project for the NSS
+          Ruby on Rails portion of the school and my first solo Rails project aside from a couple open
+          source projects I contributed to at NSS. What I Got is now a pet project to continue learning
+          and tinkering with, beginning with its responsiveness to various devices.
 
         p.
-          And now I look forward to the second half of the NSS bootcamp involving server-side programming,
-          so that I'll soon be able to work a full stack.
+          What all of this represents, however, is my ability to learn these concepts and turn
+          that into practice. I will continue update this site as I learn and accomplish more.
 
         p — James Nix
 
