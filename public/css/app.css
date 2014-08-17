@@ -1,0 +1,96 @@
+@import url(http://fonts.googleapis.com/css?family=Esteban|Lusitana:700,400);
+body {
+  color: #f5f5f5;
+  font-family: 'Lusitana', serif;
+  background-color: #081d3b;
+}
+header {
+  background-color: blue;
+}
+#brand {
+  text-align: center;
+  font-size: 1.5em;
+}
+#brand h1 {
+  padding: 10px 0 0;
+}
+nav {
+  text-align: center;
+  margin: 20px 0 10px 0;
+  padding: 10px 0;
+  background-color: lightblue;
+}
+nav ul {
+  margin: 0 10px;
+  padding: 0;
+}
+nav li {
+  display: inline-block;
+}
+nav a {
+  padding: 15px 10px;
+  color: black;
+}
+nav a:hover {
+  color: black;
+}
+#container {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+a {
+  text-decoration: none;
+  color: #f5f5f5;
+}
+a:hover {
+  color: #f5f5f5;
+}
+img {
+  max-width: 100%;
+  border-radius: 20%;
+}
+#gallery {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+#gallery li {
+  float: left;
+  width: 45%;
+  margin: 2.5% 4.5%;
+  max-width: 220px;
+}
+#gallery li a p {
+  margin: 0;
+  padding: 5%;
+  font-size: 0.75em;
+}
+li {
+  list-style: none;
+}
+.deck {
+  font-style: italic;
+}
+.contact_links {
+  margin: 5px;
+}
+#primary {
+  width: 50%;
+  float: left;
+  margin: 5px;
+}
+#secondary {
+  width: 40%;
+  float: right;
+  margin: 5px;
+}
+footer {
+  clear: both;
+  padding-top: 20px;
+}
+#copyright {
+  margin: 5%;
+  color: #f5f5f5;
+  text-align: center;
+}
