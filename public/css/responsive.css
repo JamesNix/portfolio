@@ -1,0 +1,25 @@
+@media screen and (max-width: 599px) {
+  #primary {
+    width: 90%;
+  }
+  #secondary {
+    float: left;
+  }
+  #gallery li {
+    width: 98.3333%;
+    max-width: 220px;
+    display: inline;
+    margin: 12.5%;
+  }
+  #gallery li:nth-child(2n) {
+    clear: left;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 1000px) {
+  #gallery li:nth-child(3n) {
+    clear: left;
+  }
+  #gallery li:nth-child(6n) {
+    clear: right;
+  }
+}
