@@ -1,0 +1,121 @@
+@import url(http://fonts.googleapis.com/css?family=Esteban|Lusitana:700,400);
+
+@bg-color: #081D3B;
+@text: whitesmoke;
+
+body {
+  color: @text;
+  font-family: 'Lusitana', serif;
+  background-color: @bg-color;
+}
+
+header {
+  background-color: blue;
+}
+
+#brand {
+  text-align: center;
+  font-size: 1.5em;
+  h1 {
+    padding: 10px 0 0;
+  }
+}
+
+nav {
+  text-align: center;
+  margin: 20px 0 10px 0;
+  padding: 10px 0;
+  background-color: lightblue;
+  ul {
+    margin: 0 10px;
+    padding: 0;
+  }
+  li {
+    display: inline-block;
+  }
+  a {
+    padding: 15px 10px;
+    color: black;
+  }
+  a:hover {
+    color: black;
+  }
+}
+
+#container {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+
+a {
+  text-decoration: none;
+  color: @text;
+}
+
+a:hover {
+  color: @text;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 20%;
+}
+
+// Portfolio page
+
+#gallery {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#gallery li {
+  float: left;
+  width: 45%;
+  margin: 2.5% 4.5%;
+  max-width: 220px;
+}
+
+#gallery li a p {
+  margin: 0;
+  padding: 5%;
+  font-size: 0.75em;
+}
+
+li {
+  list-style: none;
+}
+
+.deck {
+  font-style: italic;
+}
+
+.contact_links {
+  margin: 5px;
+}
+
+// Contact page
+
+#primary {
+  width: 50%;
+  float: left;
+  margin: 5px;
+}
+
+#secondary {
+  width: 40%;
+  float: right;
+  margin: 5px;
+}
+
+footer {
+  clear: both;
+  padding-top: 20px;
+}
+
+#copyright {
+  margin: 5%;
+  color: @text;
+  text-align: center;
+}
