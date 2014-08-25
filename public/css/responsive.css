@@ -14,6 +14,18 @@
   #gallery li:nth-child(2n) {
     clear: left;
   }
+  .row {
+    float: none;
+  }
+  .col-md-4 {
+    float: none;
+  }
+  .col-md-4 li {
+    width: 20em;
+  }
+  i {
+    width: 12em;
+  }
 }
 @media screen and (min-width: 600px) and (max-width: 1000px) {
   #gallery li:nth-child(3n) {
@@ -21,5 +33,8 @@
   }
   #gallery li:nth-child(6n) {
     clear: right;
+  }
+  i {
+    width: 12em;
   }
 }
