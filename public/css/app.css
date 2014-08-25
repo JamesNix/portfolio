@@ -10,9 +10,19 @@ header {
 #brand {
   text-align: center;
   font-size: 1.5em;
+  margin: .67em;
 }
 #brand h1 {
   padding: 10px 0 0;
+}
+h1 {
+  margin: .67em 0;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 nav {
   text-align: center;
@@ -33,6 +43,9 @@ nav a {
 }
 nav a:hover {
   color: black;
+}
+nav a:select {
+  color: white;
 }
 #container {
   max-width: 940px;
@@ -74,6 +87,24 @@ li {
 }
 .contact_links {
   margin: 5px;
+}
+.row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.row:before,
+.row:after {
+  content: " ";
+  display: table;
+}
+.row:after {
+  clear: both;
+}
+.col-md-4 {
+  position: relative;
+  min-height: 1px;
+  float: left;
+  width: 33.33333333%;
 }
 #primary {
   width: 50%;
