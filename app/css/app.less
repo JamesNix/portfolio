@@ -3,10 +3,31 @@
 @bg-color: #081D3B;
 @text: whitesmoke;
 
+//GENERAL
+
 body {
   color: @text;
   font-family: 'Lusitana', serif;
   background-color: @bg-color;
+}
+
+#container {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+
+a {
+  text-decoration: none;
+  color: @text;
+  :hover {
+    color: lightgray;
+  }
+}
+
+img {
+  max-width: 100%;
+  border-radius: 20%;
 }
 
 header {
@@ -49,35 +70,19 @@ nav {
   }
   a {
     padding: 15px 10px;
-    color: black;
+    color: red;
+  }
+  a:visited {
+    color: @bg-color;
   }
   a:hover {
-    color: black;
-  }
-  a:select {
     color: white;
   }
+  a.selected {
+    color: blue;
+  }
 }
 
-#container {
-  max-width: 940px;
-  margin: 0 auto;
-  padding: 0 5%;
-}
-
-a {
-  text-decoration: none;
-  color: @text;
-}
-
-a:hover {
-  color: @text;
-}
-
-img {
-  max-width: 100%;
-  border-radius: 20%;
-}
 
 // Portfolio page
 
@@ -128,8 +133,6 @@ li {
 .col-md-4 {
   position: relative;
   min-height: 1px;
-  // padding-left: 15px;
-  // padding-right: 15px;
   float: left;
   width: 33.33333333%;
 }

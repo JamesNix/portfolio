@@ -4,6 +4,22 @@ body {
   font-family: 'Lusitana', serif;
   background-color: #081d3b;
 }
+#container {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+a {
+  text-decoration: none;
+  color: #f5f5f5;
+}
+a :hover {
+  color: lightgray;
+}
+img {
+  max-width: 100%;
+  border-radius: 20%;
+}
 header {
   background-color: blue;
 }
@@ -39,29 +55,16 @@ nav li {
 }
 nav a {
   padding: 15px 10px;
-  color: black;
+  color: red;
+}
+nav a:visited {
+  color: #081d3b;
 }
 nav a:hover {
-  color: black;
-}
-nav a:select {
   color: white;
 }
-#container {
-  max-width: 940px;
-  margin: 0 auto;
-  padding: 0 5%;
-}
-a {
-  text-decoration: none;
-  color: #f5f5f5;
-}
-a:hover {
-  color: #f5f5f5;
-}
-img {
-  max-width: 100%;
-  border-radius: 20%;
+nav a.selected {
+  color: blue;
 }
 #gallery {
   margin: 0;
