@@ -44,7 +44,7 @@ nav a {
 nav a:hover {
   color: black;
 }
-nav a:select {
+nav a:visited {
   color: white;
 }
 #container {
