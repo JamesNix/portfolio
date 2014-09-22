@@ -16,6 +16,10 @@ a {
 a :hover {
   color: lightgray;
 }
+p > a {
+  text-decoration: none;
+  color: blue;
+}
 img {
   max-width: 100%;
   border-radius: 20%;
@@ -64,6 +68,12 @@ nav a:hover {
 }
 nav a.selected {
   color: blue;
+}
+#copyright {
+  color: #f5f5f5;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 #gallery {
   margin: 0;
@@ -121,9 +131,4 @@ li {
 footer {
   clear: both;
   padding-top: 20px;
-}
-#copyright {
-  margin: 5%;
-  color: #f5f5f5;
-  text-align: center;
 }
