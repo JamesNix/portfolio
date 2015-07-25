@@ -49,7 +49,7 @@ html(class='no-js', lang='en')
           I'll never be done learning.
 
         p.
-          This fall I've continued to learn and engage in the Nashville development community by volunteering with the
+          In the fall of 2014 I continued to learn and engage in the Nashville development community by volunteering with the
           fledgling <a href='http://codefornashville.org'>Code for Nashville</a> where I helped launch <a href='http://nashvilleflushots.org'>nashvilleflushots.org</a>
           that helps Nashville residents find out information on where to get flu shots and how much they cost at each location this winter. 
           I also worked on the Code for Nashville team at this year's <a href='http://hacknashville.com/'>Hack Nashville</a> to develop an app (NashViva) that uses the Nashville Open Data Portal
@@ -124,7 +124,8 @@ html(class='no-js', lang='en')
         p — James Nix
 
     footer
-      small#copyright &copy; 2014 James Nix
+      - var year = new Date().getFullYear();
+      small#copyright &copy; #{year} James Nix
 
     script(src='/js/vendor/moment.js')
     script(src='/js/source/main.js')

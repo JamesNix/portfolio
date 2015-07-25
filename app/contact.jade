@@ -67,7 +67,8 @@ html(class='no-js', lang='en')
               i(class='fa fa-twitter-square fa-1x button')  Twitter
           br
     footer
-      small#copyright &copy; 2014 James Nix
+      - var year = new Date().getFullYear();
+      small#copyright &copy; #{year} James Nix
 
     script(src='/js/vendor/moment.js')
     script(src='/js/source/main.js')
